@@ -1,0 +1,106 @@
+<div class="alert alert-success" ng-show="success">Cập nhật thành công</div>
+<section class="bg-light">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <img src="../img/bg-2.jpg" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                        <h5 class="my-3"></h5>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="#" class="text-dark">
+                                <button type="button" class="btn btn-primary mr-3">Edit Profile</button>
+                            </a>
+                            <a href="#" class="text-dark">
+                                <button type="button" class="btn btn-outline-primary ms-1">Orders</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 mb-lg-0">
+                    <div class="card-body p-0">
+                        <ul class="list-group list-group-flush rounded-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <p class="mb-0">Profile</p>
+                                </a>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <p class="mb-0">Orders</p>
+                                </a>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <p class="mb-0">Change Password</p>
+                                </a>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <p class="mb-0">Logout</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-8">
+                <h2>Edit Profile</h2>
+
+                <div class="card mb-4 update">
+                    <form action="" ng-submit="update()">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">User Name*</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input type="text" name="name" class="form-control" value=""
+                                        ng-model="users.username">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Email*</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input type="email" name="email" class="form-control" value=""
+                                        ng-model="users.email">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Password*</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input type="password" name="password" class="form-control" value=""
+                                        ng-model="users.password" readonly>
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+
+                                    <p class="mb-0">Phone*</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input type="text" name="phone" class="form-control" value=""
+                                        ng-model="users.phone">
+
+                                </div>
+                            </div>
+                            <hr>
+
+                            <button type="submit" class="btn btn-primary mr-3">Confirm
+                                Edit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

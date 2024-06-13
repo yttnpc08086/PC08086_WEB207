@@ -1,0 +1,30 @@
+<div class="bodyLogin">
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form name="registerForm" ng-submit="signup()">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="username" placeholder="User name" required ng-model="users.username"
+                    minlength="5" valid-username>
+
+                <input type="email" name="email" placeholder="Email" required ng-model="users.email" valid-Email>
+
+                <input type="tel" name="phone" placeholder="Phone" required ng-model="users.phone" valid-Tel>
+                <input type="password" name="password" placeholder="Password" required ng-model="users.password">
+
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form name="loginForm" ng-submit="login()">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="text" name="username" placeholder="Email" ng-model="users.username" required>
+                <input type="password" name="password" placeholder="Password" ng-model="users.password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+    </div>
+</div>
